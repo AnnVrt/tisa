@@ -161,6 +161,7 @@ button {
 }
 .main-title {
   color: #345724;
+  font-family: Roboto;
   position: relative;
   z-index: 5;
 }
@@ -191,9 +192,7 @@ button {
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
-}
-.box-action-images .action-img {
-  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 .main-sec-reviews {
   position: relative;
