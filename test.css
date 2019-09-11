@@ -26,8 +26,13 @@ button {
   width: 997px;
   margin: 0 auto;
 }
+.container {
+  max-width: 1410px;
+  padding: 0px 15px;
+  margin: auto;
+}
 /* HEADER start */
-.header-logo {
+.header-section-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -172,15 +177,13 @@ button {
   flex-wrap: wrap;
 }
 .catalog-box-links .catalog-links {
-  width: 450px;
-  height: 450px;
   display: flex;
   position: relative;
 }
 .catalog-box-links .catalog-links .catalog-text {
   width: 223px;
   position: absolute;
-  bottom: 347px;
+  top: 30px;
   left: 32px;
   font-size: 30px;
 }
@@ -188,127 +191,139 @@ button {
   margin-bottom: 85px;
 }
 .box-action-images {
-  width: 1349px;
   margin: 0 auto;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+.box-action-images .action-img {
+  width: 250px;
 }
 .main-sec-reviews {
   position: relative;
+  /* FOOTER Start */
 }
 .main-sec-reviews .reviews-wrapper {
   position: relative;
   display: flex;
+  justify-content: space-between;
 }
 .main-sec-reviews .reviews-wrapper .review-boxes {
   display: flex;
   justify-content: space-between;
+  height: 366px;
 }
 .main-sec-reviews .reviews-wrapper .review-boxes .reviews-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 65px 70px 15px 63px;
+  justify-content: space-around;
+  align-items: center;
+  width: 266px;
+  height: 98%;
   border: 3px solid #203317;
   font-family: Roboto, sans-serif;
   background-color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
 }
 .main-sec-reviews .reviews-wrapper .review-boxes .reviews-box:not(:last-child) {
-  margin-right: 87px;
+  margin: 0px 43px;
 }
-.flower-back-right {
+.main-sec-reviews .flower-back-right {
   position: absolute;
   top: 500px;
   right: 0px;
+  z-index: -10;
 }
-.main-btn {
+.main-sec-reviews .main-btn {
   position: absolute;
   top: 50%;
   transform: translateX(-50%);
 }
-main .slick-arrow {
+.main-sec-reviews main .slick-arrow {
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
 }
-main .arr-prev {
+.main-sec-reviews main .arr-prev {
   left: -60px;
 }
-main .arr-next {
+.main-sec-reviews main .arr-next {
   right: -60px;
 }
-.review-text {
+.main-sec-reviews .review-text {
   font-size: 25px;
+  width: 130px;
+  margin-top: 10px;
 }
-.review-name {
+.main-sec-reviews .review-name {
   color: #656565;
   font-size: 30px;
   margin-top: 25px;
   margin-bottom: 20px;
 }
-.reviews-box img {
+.main-sec-reviews .reviews-box img {
   width: 130px;
 }
-.article-box {
+.main-sec-reviews .article-box {
   display: flex;
 }
-.aricle-content {
+.main-sec-reviews .aricle-content {
   padding: 60px 54px 70px 56px;
   box-sizing: border-box;
   background-color: #345724;
   font-family: Roboto, sans-serif;
 }
-.main-sec-articles {
+.main-sec-reviews .main-sec-articles {
   margin-top: 30px;
 }
-.article-title {
+.main-sec-reviews .article-title {
   font-size: 30px;
   color: #DBD6A3;
   text-transform: uppercase;
   margin-bottom: 40px;
 }
-.article-text {
+.main-sec-reviews .article-text {
   font-size: 20px;
   color: #fff;
   line-height: 23px;
 }
-/* FOOTER Start */
-.footer {
+.main-sec-reviews .footer {
   background-color: #345724;
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.footer-row-links {
+.main-sec-reviews .footer-row-links {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 86px;
 }
-.footer-links {
+.main-sec-reviews .footer-links {
   display: flex;
 }
-.footer-links-box {
+.main-sec-reviews .footer-links-box {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
   width: 50%;
 }
-.footer-phone {
+.main-sec-reviews .footer-phone {
   color: #fff;
 }
-.footer .phone-text {
+.main-sec-reviews .footer .phone-text {
   color: #FFFFFF;
 }
-.footer .phone-links {
+.main-sec-reviews .footer .phone-links {
   color: #DBD6A3;
 }
-.footer-links {
+.main-sec-reviews .footer-links {
   height: 50px;
   align-items: center;
 }
-.footer-row-text {
+.main-sec-reviews .footer-row-text {
   width: 431px;
   font-size: 13px;
   color: #DBD6A3;
