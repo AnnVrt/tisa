@@ -155,7 +155,7 @@ button {
 
 /* MAIN Start */
 .main {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     position: relative;
 }
 .flower-back-left {
@@ -209,36 +209,34 @@ button {
         width: 250px;
     }
 }
-
 .main-sec-reviews {
     position: relative;
-    .reviews-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-        .review-boxes {
-            .flex;
-            height: 366px;
-            .reviews-box {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                width: 266px;
-                height: 98%;
-                border: 3px solid #203317;
-                font-family: Roboto, sans-serif;
-                background-color: #fff;
-                padding: 5px;
-                box-sizing: border-box;
-            }
-            .reviews-box:not(:last-child) {
-                margin: 0px 43px;
-            }
-        }
-        
-    }
+}
 
+.reviews-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;       
+}
+
+
+.main .reviews-wrapper .reviews-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 266px;
+    height: 367px;
+    margin-right: 85px;
+    border: 3px solid #203317;
+    font-family: Roboto, sans-serif;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+}
+// .main .reviews-wrapper .reviews-box:nth-child(3n) {
+//     margin: 0px;
+// }
 
 .flower-back-right {
     position: absolute;
@@ -319,7 +317,7 @@ main .arr-next {
 .footer-links-box {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 50%;
 }
@@ -341,5 +339,4 @@ main .arr-next {
     font-size: 13px;
     color: #DBD6A3;
     font-family: Roboto, sans-serif;
-}
 }

@@ -33,11 +33,18 @@
   .main-width {
     width: 700px;
   }
+  .flower-back-left {
+    width: 300px;
+    top: -200px;
+  }
   main .arr-prev {
     left: -20px;
   }
   main .arr-next {
     right: -20px;
+  }
+  .reviews-box:not(:last-child) {
+    margin: 0px 23px;
   }
   .article-box img {
     width: 300px;
@@ -60,10 +67,10 @@
     flex-direction: column;
     align-items: center;
   }
-  .sect-offer-title {
+  .header .offer-box-text .sect-offer-title {
     font-size: 30px;
   }
-  .offer-box-text p {
+  .header .sect-offer-box .offer-box-text p {
     font-size: 20px;
   }
   .article-box {
@@ -75,6 +82,19 @@
   .footer-row-links {
     flex-direction: column;
     align-items: center;
+  }
+  .main .reviews-wrapper .reviews-box {
+    padding: 10px;
+  }
+  .review-text {
+    width: 113px;
+    font-size: 20px;
+  }
+  .review-name {
+    font-size: 25px;
+  }
+  .reviews-box img {
+    width: 100px;
   }
   .footer-logo {
     margin-bottom: 50px;
@@ -89,5 +109,8 @@
   }
   .catalog-links img {
     width: 250px;
+  }
+  .catalog-box-links .catalog-links .catalog-text {
+    font-size: 20px;
   }
 }
