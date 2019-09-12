@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css?family=Risque|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="Remodal-master/dist/remodal.css">
+    <link rel="stylesheet" href="Remodal-master/dist/remodal-default-theme.css">
+    <link rel="stylesheet" href="WOW-master/css/libs/animate.css">
+
     <link href="test.css" rel="stylesheet" type="text/css">
     <link href="media.css" rel="stylesheet" type="text/css">
     <title>Document</title>
@@ -89,7 +93,7 @@
                         <a class="nav-link" href="">отзывы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="link-quick-order" href="">Быстрый заказ</a>
+                        <a class="link-quick-order" href="#modal">Быстрый заказ</a>
 
                     </li>
                 </ul>
@@ -143,24 +147,24 @@
     <main class="main">
         <img class="flower-back-left" src="img/flower-back-left.png" alt="tisa-decoration">
         <section class="main-sec-catalog main-width">
-            <h2 class="main-title">Каталог</h2>
+            <h2 class="main-title wow fadeInRight">Каталог</h2>
             <div class="catalog-wrapper">
                 <div class="catalog-box-links">
-                    <a class="catalog-links">
+                    <a class="catalog-links wow wobble">
                         <p class="catalog-text">Тара косетическая</p>
                         <img src="img/img-container.jpg" alt="">
                     </a>
-                    <a class="catalog-links">
+                    <a class="catalog-links wow wobble">
                         <p class="catalog-text">Масла</p>
                         <img src="img/img-oils.jpg" alt="">
                     </a>
                 </div>
                 <div class="catalog-box-links">
-                    <a class="catalog-links margin-top margin-right">
+                    <a class="catalog-links margin-top margin-right wow wobble">
                         <p class="catalog-text">Натуральная косметика</p>
                         <img src="img/organic-cosmetics.jpg" alt="">
                     </a>
-                    <a class="catalog-links margin-top">
+                    <a class="catalog-links margin-top wow wobble">
                         <p class="catalog-text">Косметические ингредиенты</p>
                         <img src="img/cosmetics-dose.jpg" alt="">
                     </a>
@@ -168,7 +172,7 @@
             </div>
         </section>
         <section class="main-sec-actions">
-            <h2 class="main-title main-width">Новинки и акции</h2>
+            <h2 class="main-title main-width wow fadeInRight">Новинки и акции</h2>
             <div class="box-action-images">
                 <img class="action-img" src="img/oil-jpg.jpg" alt="our actions">
                 <img class="action-img" src="img/bottles.jpg" alt="our actions">
@@ -180,7 +184,7 @@
         <img class="flower-back-right" src="img/flower-right.png" alt="tisa-decoration">
         <section class="main-sec-reviews main-width">
             <div class="container">
-                <h2 class="main-title">Отзывы</h2>
+                <h2 class="main-title wow fadeInRight">Отзывы</h2>
                 <div class="reviews-wrapper">
                     <div class="reviews-box">
                         <p class="review-text">Товар отличного качества. Цены просто супер!...</p>
@@ -220,11 +224,11 @@
         </section>
 
         <section class="main-sec-articles main-width">
-            <h2 class="main-title">Статьи</h2>
+            <h2 class="main-title wow fadeInRight">Статьи</h2>
             <div class="article-box">
                 <img src="img/article-img.jpg" alt="read this article">
                 <div class="aricle-content">
-                    <p class="article-title">как правильно хранить духи: 5 главных правил</p>
+                    <p class="article-title wow rotateIn">как правильно хранить духи: 5 главных правил</p>
                     <p class="article-text">Хотим расстроить тех, кто хранит свой аромат на прикроватном столике в комнате с хорошим светом. Это
                         просто недопустимо,..</p>
                 </div>
@@ -314,6 +318,17 @@
             </div>
         </div>
     </footer>
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1 class="modal-title">Быстрый заказ</h1>
+        <form class="modal-form" action="" method="post">
+            <input type="search">
+            <button class="modal-form-btn" type="submit">Найти</button>
+        </form>
+        <!--<br />-->
+        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">Купить</button>
+    </div>
 
 
 
@@ -321,6 +336,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="Remodal-master/dist/remodal.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script>
         $('.header-section-offer').slick();
@@ -347,13 +364,14 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ],
             prevArrow: '<div class="arrow arr-prev"><svg width="22" height="38" viewBox="0 0 22 38" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M1.23247 17.5901C0.25616 18.5665 0.25616 20.1494 1.23247 21.1257L17.1424 37.0356C18.1187 38.0119 19.7016 38.0119 20.6779 37.0356C21.6542 36.0593 21.6542 34.4764 20.6779 33.5L6.53577 19.3579L20.6779 5.21577C21.6542 4.23946 21.6542 2.65655 20.6779 1.68024C19.7016 0.70393 18.1187 0.70393 17.1424 1.68024L1.23247 17.5901ZM3.01367 16.8579H3.00024V21.8579H3.01367V16.8579Z" fill="#203317"/> </svg></div>',
             nextArrow: '<div class="arrow arr-next"><svg width="22" height="38" viewBox="0 0 22 38" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20.781 21.0993C21.7573 20.123 21.7573 18.5401 20.781 17.5638L4.87105 1.65387C3.89474 0.677563 2.31183 0.677563 1.33552 1.65387C0.359211 2.63018 0.359211 4.2131 1.33552 5.18941L15.4777 19.3315L1.33552 33.4737C0.359211 34.45 0.359211 36.0329 1.33552 37.0092C2.31183 37.9855 3.89474 37.9855 4.87105 37.0092L20.781 21.0993ZM18.9998 21.8315H19.0132V16.8315H18.9998V21.8315Z" fill="#203317"/></svg></div>'
         });
+    </script>
+    <script src="WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
     </script>
 </body>
 

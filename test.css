@@ -146,6 +146,20 @@ button {
 .offer-dots .selected-dot {
   background-color: #656565;
 }
+.modal-form {
+  margin-bottom: 40px;
+  height: 40px;
+}
+.modal-form input {
+  height: 100%;
+  border-radius: 8px;
+}
+.modal-form .modal-form-btn {
+  height: 100%;
+  color: #fff;
+  background-color: #345724;
+  border-radius: 8px;
+}
 /* MAIN Start */
 .main {
   margin-bottom: 50px;
